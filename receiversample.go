@@ -20,11 +20,20 @@ func (s *SavingBox) Break() int {
 	return lastMoney
 }
 
+func (s SavingBox) Peep() int {
+	return s.money
+}
+
 func mainReceiverSample() {
-	box := NewBox()
+	//box := NewBox()
+	box := SavingBox{}
+	fmt.Printf("%d\n", box.Peep())
 	box.Income(100)
+	fmt.Printf("%d\n", box.Peep())
 	box.Income(200)
+	fmt.Printf("%d\n", box.Peep())
 	box.Income(500)
+	fmt.Printf("%d\n", box.Peep())
 
 	fmt.Printf("貯金箱を壊したら%d円出てきました。", box.Break())
 }
