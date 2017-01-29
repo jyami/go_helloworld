@@ -4,4 +4,5 @@ func main() {
 	mainHelloWorld()
 	mainTypeSample()
 	mainReceiverSample()
+	mainDeferSample()
 }

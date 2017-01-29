@@ -27,13 +27,13 @@ func (s SavingBox) Peep() int {
 func mainReceiverSample() {
 	//box := NewBox()
 	box := SavingBox{}
-	fmt.Printf("%d\n", box.Peep())
+	fmt.Println("%d", box.Peep())
 	box.Income(100)
-	fmt.Printf("%d\n", box.Peep())
+	fmt.Println("%d", box.Peep())
 	box.Income(200)
-	fmt.Printf("%d\n", box.Peep())
+	fmt.Println("%d", box.Peep())
 	box.Income(500)
-	fmt.Printf("%d\n", box.Peep())
+	fmt.Println("%d", box.Peep())
 
-	fmt.Printf("貯金箱を壊したら%d円出てきました。", box.Break())
+	fmt.Println("貯金箱を壊したら%d円出てきました。", box.Break())
 }
