@@ -6,4 +6,5 @@ func main() {
 	mainReceiverSample()
 	mainDeferSample()
 	mainInterfaceSample()
+	mainSliceSample()
 }
